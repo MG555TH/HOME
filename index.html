@@ -16,7 +16,7 @@
 	<meta property="og:type" content="website" />
 	
 	<meta property="article:modified_time" content="2022-01-19T08:09:03+00:00" />
-	<meta property="og:image" content="#PH#" />
+	<meta property="og:image" content="assets/images/T-LOgoMG555TH.png" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:label1" content="Est. reading time" />
 	<meta name="twitter:data1" content="3 minutes" />
@@ -89,9 +89,9 @@ var qubely_container_width = {"sm":"540","md":"720","lg":"960","xl":"1140"};
 </script>
 <!-- /end HFCM by 99 Robots -->
 <script id='nitro-telemetry'>(function() {!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?t(exports):"function"==typeof define&&define.amd?define(["exports"],t):t((e="undefined"!=typeof globalThis?globalThis:e||self).webVitals={})}(this,(function(e){"use strict";var t,n,i,r,a=function(e,t){return{name:e,value:void 0===t?-1:t,delta:0,entries:[],id:"v2-".concat(Date.now(),"-").concat(Math.floor(8999999999999*Math.random())+1e12)}},o=function(e,t){try{if(PerformanceObserver.supportedEntryTypes.includes(e)){if("first-input"===e&&!("PerformanceEventTiming"in self))return;var n=new PerformanceObserver((function(e){return e.getEntries().map(t)}));return n.observe({type:e,buffered:!0}),n}}catch(e){}},u=function(e,t){var n=function n(i){"pagehide"!==i.type&&"hidden"!==document.visibilityState||(e(i),t&&(removeEventListener("visibilitychange",n,!0),removeEventListener("pagehide",n,!0)))};addEventListener("visibilitychange",n,!0),addEventListener("pagehide",n,!0)},c=function(e){addEventListener("pageshow",(function(t){t.persisted&&e(t)}),!0)},f=function(e,t,n){var i;return function(r){t.value>=0&&(r||n)&&(t.delta=t.value-(i||0),(t.delta||void 0===i)&&(i=t.value,e(t)))}},s=-1,m=function(){return"hidden"===document.visibilityState?0:1/0},d=function(){u((function(e){var t=e.timeStamp;s=t}),!0)},p=function(){return s<0&&(s=m(),d(),c((function(){setTimeout((function(){s=m(),d()}),0)}))),{get firstHiddenTime(){return s}}},v=function(e,t){var n,i=p(),r=a("FCP"),u=function(e){"first-contentful-paint"===e.name&&(m&&m.disconnect(),e.startTime<i.firstHiddenTime&&(r.value=e.startTime,r.entries.push(e),n(!0)))},s=window.performance&&performance.getEntriesByName&&performance.getEntriesByName("first-contentful-paint")[0],m=s?null:o("paint",u);(s||m)&&(n=f(e,r,t),s&&u(s),c((function(i){r=a("FCP"),n=f(e,r,t),requestAnimationFrame((function(){requestAnimationFrame((function(){r.value=performance.now()-i.timeStamp,n(!0)}))}))})))},l=!1,g=-1,h={passive:!0,capture:!0},y=new Date,T=function(e,r){t||(t=r,n=e,i=new Date,L(removeEventListener),E())},E=function(){if(n>=0&&n<i-y){var e={entryType:"first-input",name:t.type,target:t.target,cancelable:t.cancelable,startTime:t.timeStamp,processingStart:t.timeStamp+n};r.forEach((function(t){t(e)})),r=[]}},w=function(e){if(e.cancelable){var t=(e.timeStamp>1e12?new Date:performance.now())-e.timeStamp;"pointerdown"==e.type?function(e,t){var n=function(){T(e,t),r()},i=function(){r()},r=function(){removeEventListener("pointerup",n,h),removeEventListener("pointercancel",i,h)};addEventListener("pointerup",n,h),addEventListener("pointercancel",i,h)}(t,e):T(t,e)}},L=function(e){["mousedown","keydown","touchstart","pointerdown"].forEach((function(t){return e(t,w,h)}))},S={};e.getCLS=function(e,t){l||(v((function(e){g=e.value})),l=!0);var n,i=function(t){g>-1&&e(t)},r=a("CLS",0),s=0,m=[],d=function(e){if(!e.hadRecentInput){var t=m[0],i=m[m.length-1];s&&e.startTime-i.startTime<1e3&&e.startTime-t.startTime<5e3?(s+=e.value,m.push(e)):(s=e.value,m=[e]),s>r.value&&(r.value=s,r.entries=m,n())}},p=o("layout-shift",d);p&&(n=f(i,r,t),u((function(){p.takeRecords().map(d),n(!0)})),c((function(){s=0,g=-1,r=a("CLS",0),n=f(i,r,t)})))},e.getFCP=v,e.getFID=function(e,i){var s,m=p(),d=a("FID"),v=function(e){e.startTime<m.firstHiddenTime&&(d.value=e.processingStart-e.startTime,d.entries.push(e),s(!0))},l=o("first-input",v);s=f(e,d,i),l&&u((function(){l.takeRecords().map(v),l.disconnect()}),!0),l&&c((function(){var o;d=a("FID"),s=f(e,d,i),r=[],n=-1,t=null,L(addEventListener),o=v,r.push(o),E()}))},e.getLCP=function(e,t){var n,i=p(),r=a("LCP"),s=function(e){var t=e.startTime;t<i.firstHiddenTime&&(r.value=t,r.entries.push(e)),n()},m=o("largest-contentful-paint",s);if(m){n=f(e,r,t);var d=function(){S[r.id]||(m.takeRecords().map(s),m.disconnect(),S[r.id]=!0,n(!0))};["keydown","click"].forEach((function(e){addEventListener(e,d,{once:!0,capture:!0})})),u(d,!0),c((function(i){r=a("LCP"),n=f(e,r,t),requestAnimationFrame((function(){requestAnimationFrame((function(){r.value=performance.now()-i.timeStamp,S[r.id]=!0,n(!0)}))}))}))}},e.getTTFB=function(e){var t,n=a("TTFB");t=function(){try{var t=performance.getEntriesByType("navigation")[0]||function(){var e=performance.timing,t={entryType:"navigation",startTime:0};for(var n in e)"navigationStart"!==n&&"toJSON"!==n&&(t[n]=Math.max(e[n]-e.navigationStart,0));return t}();if(n.value=n.delta=t.responseStart,n.value<0||n.value>performance.now())return;n.entries=[t],e(n)}catch(e){}},"complete"===document.readyState?setTimeout(t,0):addEventListener("pageshow",t)},Object.defineProperty(e,"__esModule",{value:!0})}));
-var nitroTelemetry=function(){let e=!!window.IS_NITROPACK;let t=true;let a=false;let n=null;let l=null;let i=null;let o=g();let r="https://to.getnitropack.com/";let u="OXqFXdvtGZrVeoTEfaQTINxTkVqnqKxu";let f=typeof NPRL!="undefined";let s=f?"loadNitro":"load";let c;let d;let w;function g(){return"NPTelemetry:"+btoa(Date.now())+"_"+h()+(e?"_o":"_u")}function v(){return document.visibilityState==="visible"}function y(){t=true;o=g();c=null;d={crux:null};S()}function S(){w={sessionEntry:null,unknown:0,afterStyles:0,afterPageLoad:0,afterScroll:0,total:0}}function p(){let n=performance.getEntriesByType("navigation");let l={};for(let t in n){let e=n[t];l.ttfb=e.responseStart-e.requestStart}return l}function h(){if(navigator.connection){return navigator.connection.effectiveType}else{return"u"}}function L(){let e=o+":pageview";m(e,{pv:1})}function m(e,t){t.url=window.location.href.replace(window.location.hash,"");if(window.localStorage){localStorage.setItem(e,JSON.stringify(t))}else{D([t])}}function b(e){if(!window.localStorage)return;let n=null;let l={};let t=0;let i;let o;let r;do{n=localStorage.key(t);if(n&&n.indexOf("NPTelemetry:")===0){r=n.split(":")[1];i=JSON.parse(localStorage.getItem(n));if(!l[r])l[r]={};let t=l[r];for(let e in i){o=i[e];if(o!==null){if(e=="url"){t[e]=o}else if(k(o)){if(!t[e])t[e]=0;t[e]+=o}else if(E(o)){if(!t[e])t[e]={};if(!t[e][o])t[e][o]=0;t[e][o]++}}}localStorage.removeItem(n)}else{t++}}while(n!==null);if(Object.keys(l).length){D(l)}a=false}function k(e){return!isNaN(parseFloat(e))&&isFinite(e)}function E(e){return typeof e==="string"||e instanceof String}function D(e){let t=new FormData;t.append("key",u);if(Object.keys(e).length){t.append("props",JSON.stringify(e));navigator.sendBeacon&&navigator.sendBeacon(r,t)||fetch(r,{body:t,method:"POST",keepalive:true})}}function N(e){if(e===b){if(a){return}else{a=true}}if(window.requestIdleCallback){requestIdleCallback(e,{timeout:1e3})}else{setTimeout(e,1e3)}}function P(){let e=o+":cwv";let t={};if(d.crux){t["lcp:crux"]=Math.round(d.crux)}if(w.total!==null){let e=1e3;t["cls:total"]=Math.round(w.total*e);if(w.afterStyles){t["cls:afterStylesDelta"]=Math.round(w.afterStyles*e)}if(w.afterPageLoad){t["cls:afterPageLoadDelta"]=Math.round(w.afterPageLoad*e)}if(w.afterScroll){t["cls:afterScrollDelta"]=Math.round(w.afterScroll*e)}if(w.unknown){t["cls:unknownDelta"]=Math.round(w.unknown*e)}}else{t["cls:total"]=0}if(c){t["fid"]=Math.round(c)}if(Object.keys(t).length){m(e,t)}}function I(){n=Date.now();window.removeEventListener("NitroStylesLoaded",I,true)}function O(){l=Date.now();window.removeEventListener(s,O,true)}function M(){i=Date.now()}function T(e){return n&&Date.now()-n<e}function x(e){return l&&Date.now()-l<e}function C(e){return i&&Date.now()-i<e}y();window.addEventListener(s,O,true);document.addEventListener("scroll",M,{capture:true,passive:true});if(f){window.addEventListener("NitroStylesLoaded",I,true)}window.addEventListener("load",function(){let e=p();m(o+":net",{ttfb:Math.round(e.ttfb)})},true);window.addEventListener("pageshow",function(e){if(v()&&(t||e.persisted)){L();N(b);t=false}},true);window.addEventListener("pagehide",function(e){P();y();b()},true);document.addEventListener("visibilitychange",function(e){if(v()){if(t){L();N(b);t=false}}else{}},true);webVitals.getLCP(function(e){d.crux=e.value},true);webVitals.getCLS(function(e){if(e.entries[0]!==w.sessionEntry){S();w.sessionEntry=e.entries[0]}w.total=e.value;let t=250;let n=C(t)+x(t)+T(t);if(n==1){if(C(t)){w.afterScroll+=e.delta}if(x(t)){w.afterPageLoad+=e.delta}if(T(t)){w.afterStyles+=e.delta}}else{w.unknown+=e.delta}},true);webVitals.getFID(function(e){c=e.value});return{}}();;})();</script><link rel="icon" href="#" sizes="32x32" />
-<link rel="icon" href="#" sizes="192x192" />
-<link rel="apple-touch-icon" href="#" />
+var nitroTelemetry=function(){let e=!!window.IS_NITROPACK;let t=true;let a=false;let n=null;let l=null;let i=null;let o=g();let r="https://to.getnitropack.com/";let u="OXqFXdvtGZrVeoTEfaQTINxTkVqnqKxu";let f=typeof NPRL!="undefined";let s=f?"loadNitro":"load";let c;let d;let w;function g(){return"NPTelemetry:"+btoa(Date.now())+"_"+h()+(e?"_o":"_u")}function v(){return document.visibilityState==="visible"}function y(){t=true;o=g();c=null;d={crux:null};S()}function S(){w={sessionEntry:null,unknown:0,afterStyles:0,afterPageLoad:0,afterScroll:0,total:0}}function p(){let n=performance.getEntriesByType("navigation");let l={};for(let t in n){let e=n[t];l.ttfb=e.responseStart-e.requestStart}return l}function h(){if(navigator.connection){return navigator.connection.effectiveType}else{return"u"}}function L(){let e=o+":pageview";m(e,{pv:1})}function m(e,t){t.url=window.location.href.replace(window.location.hash,"");if(window.localStorage){localStorage.setItem(e,JSON.stringify(t))}else{D([t])}}function b(e){if(!window.localStorage)return;let n=null;let l={};let t=0;let i;let o;let r;do{n=localStorage.key(t);if(n&&n.indexOf("NPTelemetry:")===0){r=n.split(":")[1];i=JSON.parse(localStorage.getItem(n));if(!l[r])l[r]={};let t=l[r];for(let e in i){o=i[e];if(o!==null){if(e=="url"){t[e]=o}else if(k(o)){if(!t[e])t[e]=0;t[e]+=o}else if(E(o)){if(!t[e])t[e]={};if(!t[e][o])t[e][o]=0;t[e][o]++}}}localStorage.removeItem(n)}else{t++}}while(n!==null);if(Object.keys(l).length){D(l)}a=false}function k(e){return!isNaN(parseFloat(e))&&isFinite(e)}function E(e){return typeof e==="string"||e instanceof String}function D(e){let t=new FormData;t.append("key",u);if(Object.keys(e).length){t.append("props",JSON.stringify(e));navigator.sendBeacon&&navigator.sendBeacon(r,t)||fetch(r,{body:t,method:"POST",keepalive:true})}}function N(e){if(e===b){if(a){return}else{a=true}}if(window.requestIdleCallback){requestIdleCallback(e,{timeout:1e3})}else{setTimeout(e,1e3)}}function P(){let e=o+":cwv";let t={};if(d.crux){t["lcp:crux"]=Math.round(d.crux)}if(w.total!==null){let e=1e3;t["cls:total"]=Math.round(w.total*e);if(w.afterStyles){t["cls:afterStylesDelta"]=Math.round(w.afterStyles*e)}if(w.afterPageLoad){t["cls:afterPageLoadDelta"]=Math.round(w.afterPageLoad*e)}if(w.afterScroll){t["cls:afterScrollDelta"]=Math.round(w.afterScroll*e)}if(w.unknown){t["cls:unknownDelta"]=Math.round(w.unknown*e)}}else{t["cls:total"]=0}if(c){t["fid"]=Math.round(c)}if(Object.keys(t).length){m(e,t)}}function I(){n=Date.now();window.removeEventListener("NitroStylesLoaded",I,true)}function O(){l=Date.now();window.removeEventListener(s,O,true)}function M(){i=Date.now()}function T(e){return n&&Date.now()-n<e}function x(e){return l&&Date.now()-l<e}function C(e){return i&&Date.now()-i<e}y();window.addEventListener(s,O,true);document.addEventListener("scroll",M,{capture:true,passive:true});if(f){window.addEventListener("NitroStylesLoaded",I,true)}window.addEventListener("load",function(){let e=p();m(o+":net",{ttfb:Math.round(e.ttfb)})},true);window.addEventListener("pageshow",function(e){if(v()&&(t||e.persisted)){L();N(b);t=false}},true);window.addEventListener("pagehide",function(e){P();y();b()},true);document.addEventListener("visibilitychange",function(e){if(v()){if(t){L();N(b);t=false}}else{}},true);webVitals.getLCP(function(e){d.crux=e.value},true);webVitals.getCLS(function(e){if(e.entries[0]!==w.sessionEntry){S();w.sessionEntry=e.entries[0]}w.total=e.value;let t=250;let n=C(t)+x(t)+T(t);if(n==1){if(C(t)){w.afterScroll+=e.delta}if(x(t)){w.afterPageLoad+=e.delta}if(T(t)){w.afterStyles+=e.delta}}else{w.unknown+=e.delta}},true);webVitals.getFID(function(e){c=e.value});return{}}();;})();</script><link rel="icon" href="assets/images/T-LOgoMG555TH.png" sizes="32x32" />
+<link rel="icon" href="assets/images/T-LOgoMG555TH.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="assets/images/T-LOgoMG555TH.png" />
 <meta name="msapplication-TileImage" content="#" />
 <style></style>		<style type="text/css" id="wp-custom-css">
 			.page-id-17 .entry-title{
@@ -100,8 +100,7 @@ display:none;
 		</head>
 
 <body data-rsssl=1 class="home page-template-default page page-id-1160 wp-custom-logo qubely qubely-frontend">
-        <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-    <div id="page" class="site">
+        
         <header id="masthead" class="site-header _heading s-autoshow-m s-autoshow-d -left-logo">
             <div class="s-container _desktop">
                 
@@ -119,7 +118,7 @@ display:none;
                     </div>
                     <div class="col-5 col-md-2">
                         <div class="site-branding">
-                            <div class="site-logo"><a href="#" class="custom-logo-link" rel="home" aria-current="page"><img width="1212" height="490" src="#LOGO#" class="custom-logo" alt="" srcset="#LPOGO#" sizes="(max-width: 1212px) 100vw, 1212px" /></a></div>
+                            <div class="site-logo"><a href="#" class="custom-logo-link" rel="home" aria-current="page"><img width="1212" height="490" src="assets/images/LogoMg-H.png" class="custom-logo" alt="" srcset="assets/images/LogoMg-H.png" sizes="(max-width: 1212px) 100vw, 1212px" /></a></div>
                         </div>
                     </div>
                     <div class="col-6 col-md-5 d-flex justify-content-end p-0">
@@ -214,88 +213,123 @@ display:none;
             <div class="s-container">
                                                 <div class="s-slider -full -dots-in _space_0 _desktop">
                                                             <div class="slider">
-                        <img src="#" alt="">
+                        <img src="assets/images/รูปหน้าเว็บ.png" alt="">
                     </div>
                                         <div class="slider">
-                        <img src="#" alt="">
+                        <img src="assets/images/หน้าเว็บ1.png" alt="">
                     </div>
                                         <div class="slider">
-                        <img src="#" alt="">
+                        <img src="assets/images/หน้าเว็บ2.png" alt="">
                     </div>
                                         <div class="slider">
-                        <img src="#" alt="">
+                        <img src="assets/images/หน้าเว็บ3.png" alt="">
                     </div>
                                         <div class="slider">
-                        <img src="#" alt="">
+                        <img src="assets/images/หน้าเว็บ4.png" alt="">
                     </div>
                                         <div class="slider">
-                        <img src="#" alt="">
+                        <img src="assets/images/หน้าเว็บ5.png" alt="">
                     </div>
                                         <div class="slider">
-                        <img src="#" alt="">
+                        <img src="assets/images/หน้าเว็บ7.png" alt="">
                     </div>
                                                         </div>
                 <div class="s-slider -full -dots-in _space_0 _mobile">
                                                             <div class="slider">
-                        <img src="#" alt="">
+                        <img src="assets/images" alt="">
                     </div>
                                         <div class="slider">
-                        <img src="#" alt="">
+                        <img src="assets/images" alt="">
                     </div>
                                         <div class="slider">
-                        <img src="#" alt="">
+                        <img src="assets/images" alt="">
                     </div>
                                         <div class="slider">
-                        <img src="#" alt="">
+                        <img src="assets/images" alt="">
                     </div>
                                         <div class="slider">
-                        <img src="#" alt="">
+                        <img src="assets/images" alt="">
                     </div>
                                         <div class="slider">
                         <img src="@" alt="">
                     </div>
                                         <div class="slider">
-                        <img src="#" alt="">
+                        <img src="assets/images" alt="">
                     </div>
                                                         </div>
                 <hr class="hr-neon">
                 </hr>
                 <div class="jackpot-container d-flex align-self-center">
                     <div class="jackpot-title d-flex">
-                        <span>JACKPOT </span>
+                        <span>ผู้ร่วมสนับสนุน </span>
                     </div>
                     <marquee behavior="scroll" direction="left">
                         <div class="jackpot">
-                            <img src="#" alt="">
-                            <span class="dollar">$</span>
+                            <img src="assets/images/Untitled-2.png" alt="">
+                            <span class="dollar">MG555TH CASINO ONLINE</span>
                             
                         </div>
                         <div class="jackpot">
-                            <img src="#" alt="">
-                            <span class="dollar">$</span>
+                            <img src="assets/images/M-icongclub2.png" alt="">
+                            <span class="dollar">G-club</span>
                             
                         </div>
                         <div class="jackpot">
-                            <img src="#" alt="dg">
-                            <span class="dollar">$</span>
+                            <img src="assets/images/M-iconpg2.png" alt="">
+                            <span class="dollar">PG Slot</span>
                             
                         </div>
                         <div class="jackpot">
-                            <img src="#" alt="">
-                            <span class="dollar">$</span>
-                            
-                        <div class="jackpot">
-                            <img src="#" alt="">
-                            <span class="dollar">$</span>
+                            <img src="assets/images/M-iconAMB2.png" alt="dg">
+                            <span class="dollar">AMB</span>
                             
                         </div>
                         <div class="jackpot">
-                            <img src="#" alt="">
-                            <span class="dollar">$</span>
+                            <img src="assets/images/M-iconJILI2.png" alt="">
+                            <span class="dollar">JILI</span>
+                            
+                        <div class="jackpot">
+                            <img src="assets/images/M-iconJOKER2.png" alt="">
+                            <span class="dollar">JOKER</span>
                             
                         </div>
+                        <div class="jackpot">
+                            <img src="assets/images/M-iconLive222.png" alt="">
+                            <span class="dollar">Live222</span>
+                            
+                        </div>
+                        <div class="jackpot">
+                            <img src="assets/images/M-iconLive789.png" alt="">
+                            <span class="dollar">Live789</span>
+                            
+                        </div>
+                        <div class="jackpot">
+                            <img src="assets/images/M-iconPRAGMATIC2.png" alt="">
+                            <span class="dollar">PRAGMATIC</span>
+                            
+                        </div>
+                        <div class="jackpot">
+                            <img src="assets/images/M-iconsagame2.png" alt="">
+                            <span class="dollar">sagame</span>
+                            
+                        </div>
+                        <div class="jackpot">
+                            <img src="assets/images/M-iconSaxy3.png" alt="">
+                            <span class="dollar">Saxy</span>
+                            
+                        </div>
+                        
                     </marquee>
                 </div>
+                <div class="gb-container gb-container-6d12cdaf"><div class="gb-inside-container">
+
+                    <p></p>
+                    
+                    
+                    
+                    <div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="768" height="768" src="assets/images/ใบรับรอง1.png" alt=" " class="wp-image-4105" title="" srcset="assets/images/ใบรับรอง1.png" sizes="(max-width: 768px) 100vw, 768px" /></figure></div>
+                    
+                    </div></div>
                 <div class="gb-grid-wrapper gb-grid-wrapper-c2d61f9b">
                     <div class="gb-grid-column gb-grid-column-310dcc2e">
                         <div class="gb-container gb-container-310dcc2e">
@@ -376,7 +410,7 @@ display:none;
                                         <article id="post-3644" class="content-item -slot card-container p-2 h-100 post-3644 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
                                             <div class="assets/images">
                                                 <a title="Permalink to ways of qilin" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/PG โปรใหม่.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/PG โปรใหม่.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
+                                                    <img width="287" height="455" src="assets/images/Pro-05_mg555th.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/Pro-05_mg555th.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
                                             </div>
                                             <!-- <div class="info">
 <header class="entry-header">
@@ -388,32 +422,7 @@ display:none;
                                         <article id="post-3642" class="content-item -slot card-container p-2 h-100 post-3642 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
                                             <div class="assets/images">
                                                 <a title="Permalink to Fruit Party 2" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/1255363.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/1255363.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
-                                            </div>
-                                            <!-- <div class="info">
-<header class="entry-header">
-    </header>
-</div> -->
-                                        </article>
-                                    </div>
-
-                                    <div class=" col-6 col-md-2 hide-author px-2 my-2">
-                                        <article id="post-3642" class="content-item -slot card-container p-2 h-100 post-3642 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
-                                            <div class="assets/images">
-                                                <a title="Permalink to Fruit Party 2" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/50 120.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/50 120.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
-                                            </div>
-                                            <!-- <div class="info">
-<header class="entry-header">
-    </header>
-</div> -->
-                                        </article>
-                                    </div>
-                                    <div class=" col-6 col-md-2 hide-author px-2 my-2">
-                                        <article id="post-3642" class="content-item -slot card-container p-2 h-100 post-3642 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
-                                            <div class="assets/images">
-                                                <a title="Permalink to Fruit Party 2" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/50 12012.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/50 12012.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
+                                                    <img width="287" height="455" src="assets/images/Pro-50-100.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/Pro-50-100.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
                                             </div>
                                             <!-- <div class="info">
 <header class="entry-header">
@@ -426,7 +435,19 @@ display:none;
                                         <article id="post-3642" class="content-item -slot card-container p-2 h-100 post-3642 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
                                             <div class="assets/images">
                                                 <a title="Permalink to Fruit Party 2" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/joker โปรใหม่.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/joker โปรใหม่.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
+                                                    <img width="287" height="455" src="assets/images/Pro-50-120.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/Pro-50-120.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
+                                            </div>
+                                            <!-- <div class="info">
+<header class="entry-header">
+    </header>
+</div> -->
+                                        </article>
+                                    </div>
+                                    <div class=" col-6 col-md-2 hide-author px-2 my-2">
+                                        <article id="post-3642" class="content-item -slot card-container p-2 h-100 post-3642 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
+                                            <div class="assets/images">
+                                                <a title="Permalink to Fruit Party 2" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
+                                                    <img width="287" height="455" src="assets/images/Pro-joker โปรใหม่.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/Pro-joker โปรใหม่.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
                                             </div>
                                             <!-- <div class="info">
 <header class="entry-header">
@@ -439,7 +460,7 @@ display:none;
                                         <article id="post-3642" class="content-item -slot card-container p-2 h-100 post-3642 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
                                             <div class="assets/images">
                                                 <a title="Permalink to Fruit Party 2" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/MGโปรใหม่.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/MGโปรใหม่.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
+                                                    <img width="287" height="455" src="assets/images/Pro-MGโปรใหม่.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/Pro-MGโปรใหม่.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
                                             </div>
                                             <!-- <div class="info">
 <header class="entry-header">
@@ -452,7 +473,7 @@ display:none;
                                         <article id="post-3642" class="content-item -slot card-container p-2 h-100 post-3642 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
                                             <div class="assets/images">
                                                 <a title="Permalink to Fruit Party 2" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/Untitled-152356365.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/Untitled-152356365.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
+                                                    <img width="287" height="455" src="assets/images/บอลฝากทุกบิล 10สูงสุด 2000.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/บอลฝากทุกบิล 10สูงสุด 2000.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
                                             </div>
                                             <!-- <div class="info">
 <header class="entry-header">
@@ -465,7 +486,7 @@ display:none;
                                         <article id="post-3642" class="content-item -slot card-container p-2 h-100 post-3642 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
                                             <div class="assets/images">
                                                 <a title="Permalink to Fruit Party 2" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/Untitled-22536.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/Untitled-22536.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
+                                                    <img width="287" height="455" src="assets/images/Pro-คืนยอดเสีย.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/Pro-คืนยอดเสีย.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
                                             </div>
                                             <!-- <div class="info">
 <header class="entry-header">
@@ -478,7 +499,20 @@ display:none;
                                         <article id="post-3642" class="content-item -slot card-container p-2 h-100 post-3642 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
                                             <div class="assets/images">
                                                 <a title="Permalink to Fruit Party 2" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/กีฬาฝากแรกของวัน (20 เปอร์เซ็น).png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/กีฬาฝากแรกของวัน (20 เปอร์เซ็น).png" sizes="(max-width: 287px) 100vw, 287px"
+                                                    <img width="287" height="455" src="assets/images/กีฬาฝากแรกของวัน (20 เปอร์เซ็น).png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/กีฬาฝากแรกของวัน (20 เปอร์เซ็น).png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
+                                            </div>
+                                            <!-- <div class="info">
+<header class="entry-header">
+    </header>
+</div> -->
+                                        </article>
+                                    </div>
+
+                                    <div class=" col-6 col-md-2 hide-author px-2 my-2">
+                                        <article id="post-3642" class="content-item -slot card-container p-2 h-100 post-3642 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
+                                            <div class="assets/images">
+                                                <a title="Permalink to Fruit Party 2" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
+                                                    <img width="287" height="455" src="assets/images/คือยอดเสียบอล.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/คือยอดเสียบอล.png" sizes="(max-width: 287px) 100vw, 287px"
                                                     /> </a>
                                             </div>
                                             <!-- <div class="info">
@@ -492,7 +526,7 @@ display:none;
                                         <article id="post-3642" class="content-item -slot card-container p-2 h-100 post-3642 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
                                             <div class="assets/images">
                                                 <a title="Permalink to Fruit Party 2" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/คือยอดเสียบอล.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/คือยอดเสียบอล.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
+                                                    <img width="287" height="455" src="assets/images/บาคาร่าฝากทุกบิล 10 สูงสุด 2000.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/บาคาร่าฝากทุกบิล 10 สูงสุด 2000.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
                                             </div>
                                             <!-- <div class="info">
 <header class="entry-header">
@@ -505,7 +539,7 @@ display:none;
                                         <article id="post-3642" class="content-item -slot card-container p-2 h-100 post-3642 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
                                             <div class="assets/images">
                                                 <a title="Permalink to Fruit Party 2" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/บอลฝากทุกบิล 10สูงสุด 2000.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/บอลฝากทุกบิล 10สูงสุด 2000.png" sizes="(max-width: 287px) 100vw, 287px"
+                                                    <img width="287" height="455" src="assets/images/บาคาร่าฝากแรกของวัน (20 เปอร์เซ็น).png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/บาคาร่าฝากแรกของวัน (20 เปอร์เซ็น).png" sizes="(max-width: 287px) 100vw, 287px"
                                                     /> </a>
                                             </div>
                                             <!-- <div class="info">
@@ -519,7 +553,7 @@ display:none;
                                         <article id="post-3642" class="content-item -slot card-container p-2 h-100 post-3642 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
                                             <div class="assets/images">
                                                 <a title="Permalink to Fruit Party 2" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/บาคาร่าฝากทุกบิล 10 สูงสุด 2000.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/บาคาร่าฝากทุกบิล 10 สูงสุด 2000.png" sizes="(max-width: 287px) 100vw, 287px"
+                                                    <img width="287" height="455" src="assets/images/ฝากทุกบิล (สล๊อต) 10 สูงสุด 2000.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/ฝากทุกบิล (สล๊อต) 10 สูงสุด 2000.png" sizes="(max-width: 287px) 100vw, 287px"
                                                     /> </a>
                                             </div>
                                             <!-- <div class="info">
@@ -533,7 +567,7 @@ display:none;
                                         <article id="post-3642" class="content-item -slot card-container p-2 h-100 post-3642 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
                                             <div class="assets/images">
                                                 <a title="Permalink to Fruit Party 2" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/บาคาร่าฝากแรกของวัน (20 เปอร์เซ็น).png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/บาคาร่าฝากแรกของวัน (20 เปอร์เซ็น).png" sizes="(max-width: 287px) 100vw, 287px"
+                                                    <img width="287" height="455" src="assets/images/ยิงแอด GCLUB สล๊อต.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/ยิงแอด GCLUB สล๊อต.png" sizes="(max-width: 287px) 100vw, 287px"
                                                     /> </a>
                                             </div>
                                             <!-- <div class="info">
@@ -547,7 +581,7 @@ display:none;
                                         <article id="post-3642" class="content-item -slot card-container p-2 h-100 post-3642 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
                                             <div class="assets/images">
                                                 <a title="Permalink to Fruit Party 2" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/ฝากทุกบิล (สล๊อต) 10 สูงสุด 2000.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/ฝากทุกบิล (สล๊อต) 10 สูงสุด 2000.png" sizes="(max-width: 287px) 100vw, 287px"
+                                                    <img width="287" height="455" src="assets/images/ยิงแอด LIVE789.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/ยิงแอด LIVE789.png" sizes="(max-width: 287px) 100vw, 287px"
                                                     /> </a>
                                             </div>
                                             <!-- <div class="info">
@@ -561,7 +595,7 @@ display:none;
                                         <article id="post-3638" class="content-item -slot card-container p-2 h-100 post-3638 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
                                             <div class="assets/images">
                                                 <a title="Permalink to Shaolin soccer" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/ยิงแอด GCLUB สล๊อต.png" class="attachment-full size-full wp-post-assets/images" alt="#r" loading="lazy" srcset="assets/images/pro/ยิงแอด GCLUB สล๊อต.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
+                                                    <img width="287" height="455" src="assets/images/ยิงแอด MG555TH.png" class="attachment-full size-full wp-post-assets/images" alt="#r" loading="lazy" srcset="assets/images/ยิงแอด MG555TH.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
                                             </div>
                                             <!-- <div class="info">
 <header class="entry-header">
@@ -573,7 +607,7 @@ display:none;
                                         <article id="post-3636" class="content-item -slot card-container p-2 h-100 post-3636 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
                                             <div class="assets/images">
                                                 <a title="Permalink to bali vacation" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/ยิงแอด LIVE789.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/ยิงแอด LIVE789.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
+                                                    <img width="287" height="455" src="assets/images/สมาชิกใหม่กีฬา(100).png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/สมาชิกใหม่กีฬา(100).png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
                                             </div>
                                             <!-- <div class="info">
 <header class="entry-header">
@@ -585,7 +619,7 @@ display:none;
                                         <article id="post-3634" class="content-item -slot card-container p-2 h-100 post-3634 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
                                             <div class="assets/images">
                                                 <a title="Permalink to Pokdeng Games" rel="#" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/ยิงแอด MG555TH.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/ยิงแอด MG555TH.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
+                                                    <img width="287" height="455" src="assets/images/สล๊อตฝากแรกของวัน (20 เปอร์เซ็น).png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/สล๊อตฝากแรกของวัน (20 เปอร์เซ็น).png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
                                             </div>
                                             <!-- <div class="info">
 <header class="entry-header">
@@ -607,7 +641,7 @@ display:none;
                                         <article id="post-3636" class="content-item -slot card-container p-2 h-100 post-3636 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
                                             <div class="assets/images">
                                                 <a title="Permalink to bali vacation" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/โปรหน้ารัก.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/โปรหน้ารัก.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
+                                                    <img width="287" height="455" src="assets/images/โปร 100 MG.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/โปร 100 MG.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
                                             </div>
                                             <!-- <div class="info">
 <header class="entry-header">
@@ -620,7 +654,7 @@ display:none;
                                         <article id="post-3636" class="content-item -slot card-container p-2 h-100 post-3636 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
                                             <div class="assets/images">
                                                 <a title="Permalink to bali vacation" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/โปรหน้ารัก17.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/โปรหน้ารัก17.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
+                                                    <img width="287" height="455" src="assets/images/โปรหน้ารัก.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/โปรหน้ารัก.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
                                             </div>
                                             <!-- <div class="info">
 <header class="entry-header">
@@ -633,8 +667,12 @@ display:none;
                                         <article id="post-3636" class="content-item -slot card-container p-2 h-100 post-3636 slot type-slot status-publish has-post-thumbnail hentry category-slot" data-iframe="#">
                                             <div class="assets/images">
                                                 <a title="Permalink to bali vacation" rel="bookmark" onclick="return false;" data-popup-trigger="slot-game" class="s-modal-trigger">
-                                                    <img width="287" height="455" src="assets/images/pro/โปรหน้ารักJK10.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/pro/โปรหน้ารักJK10.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
+                                                    <img width="287" height="455" src="assets/images/โปรหน้ารัก17.png" class="attachment-full size-full wp-post-assets/images" alt="#" loading="lazy" srcset="assets/images/โปรหน้ารัก17.png" sizes="(max-width: 287px) 100vw, 287px" />                                                                    </a>
                                             </div>
+
+                                           
+                                                   
+                                                           
                                             <!-- <div class="info">
 <header class="entry-header">
     </header>
@@ -661,29 +699,14 @@ display:none;
 
 
 <p><strong><span class="has-inline-color has-pale-cyan-blue-color">MG555TH </span></strong>  รวมทุกค่ายคาสิโนที่ดีที่สุด <strong><span class="has-inline-color has-luminous-vivid-orange-color">บริการ เกมคาสิโนหลากหลายประเภท</span></strong>ไม่ว่าจะเป็น คาสิโนสด รูเล็ต แบล็คแจ๊ค และบาคาร่าออนไลน์ จากค่ายชั้นนำ เช่น Sexy Gaming, SA Gaming, Pretty Gaming และ All Bet เป็นต้น นอกจากนี้ยังมีเกมส์สล็อตออนไลน์ค่ายใหญ่อย่าง JOKER123, LIVE22, PG SLOT, SLOTXO, และ SPINIX มาให้เลือกเล่นกันได้หลากหลาย
-เชื่อถือได้ การันตี ความมั่นคง เล่นได้ จ่ายจริง เติม ถอน รวดเร็วไม่ต้องรอนาน <strong><span style="color:#ffff5f" class="has-inline-color"> ด้วยทีมงานที่เป็นมืออาชีพ คอยดูและใส่ใจคุณตลอด 24 ชั่วโมง</span></strong>ที่สุดภายในปี 2565 นี้ เพื่อทำการลงทุน สร้างผลกำไรให้กับตัวเอง เป็นการต่อยอดที่ดี กับเว็บไซต์ที่ได้รับการยอมรับจากผู้คนมากมาย ด้วยทีมงานที่เป็นมืออาชีพ</p>
+เชื่อถือได้ การันตี ความมั่นคง เล่นได้ จ่ายจริง เติม ถอน รวดเร็วไม่ต้องรอนาน <strong><span style="color:#ffff5f" class="has-inline-color"> ด้วยทีมงานที่เป็นมืออาชีพ คอยดูและใส่ใจคุณตลอด 24 ชั่วโมง</span></strong>ที่สุดภายในปี 2565 นี้ เพื่อทำการลงทุน สร้างผลกำไรให้กับตัวเอง เป็นการต่อยอดที่ดี กับเว็บไซต์ที่ได้รับการยอมรับจากผู้คนมากมาย เว็บไซต์ตรง ไม่ผ่านเอเย่นต์ มาตรฐานระดับโลก>
 
 
 
 
 
-                                    </div>
-                                </div>
-
-
-                                <div class="wp-block-kadence-rowlayout alignnone">
-                                    <div id="kt-layout-id_d5b397-79" class="kt-row-layout-inner kt-layout-id_d5b397-79">
-                                        <div class="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
-                                            <div class="wp-block-kadence-column inner-column-1 kadence-column_46db47-8f">
-                                                <div class="kt-inside-inner-col">
-                                                    <figure class="wp-block-assets/images size-large"><img loading="lazy" width="800" height="550" src="assets/images/ใบรับรอง3.png" alt="" class="wp-assets/images-3430" title="" srcset="assets/images/ใบรับรอง3.png" sizes="(max-width: 800px) 100vw, 800px" /></figure>
-                                                </div>
-                                            </div>
-
-
-
-                                           
-                                                        </div>
+                              
+                        
                                                     </div>
                                                 </div>
                                             </div>
