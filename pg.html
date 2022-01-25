@@ -8,8 +8,10 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
   <link rel="apple-touch-icon" sizes="180x180" href="img/Favicon/apple-touch-icon.png">
-  <link rel="icon" href="assets/images/T-LOgoMG555TH.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="assets/images/T-LOgoMG555TH.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/Favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/Favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/Favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <title>MG 555 TH</title>
@@ -18,9 +20,10 @@
   body {
   margin: 0;
   font-family: 'Roboto Slab', serif;
-  font-size: 20px;
-  color: #000;
+  font-size: 15px;
+  color: #333;
   line-height: 1.6;
+  background-color: #160040;
 }
 
 *,
@@ -40,14 +43,14 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;*/
   /*justify-content: center;*/
   width: 100%;
-  height: 100%;
+  height: 100vh;
 
 
   padding: 0;
   margin: 0 auto;
 
 
-  background-color: #04293A ;
+  background: url("../img/LFC opac.png") center no-repeat;
   background-size: cover;
 
 }
@@ -58,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   padding: 40px 0;
   justify-content: center;
-  max-width: 1500px;
+  max-width: 1100px;
   margin: auto;
 
 }
@@ -158,20 +161,28 @@ h1, h2, h3, h4, h5, h6 {
 }*/
 
 .register_input {
-    position: relative;
-    width: 100%;
-    height: 48px;
-    padding: 12px 0 16px 74px;
-    background: #fff;
-    border: 1px solid #C40100;
-    font-family: 'Roboto Slab', serif;
-    font-size: 18px;
-    line-height: 1.1;
-    color: #938E8E;
-    font-weight: 400;
-    border-radius: 10px;
-    transition: box-shadow .3s linear;
+  /*position: relative;*/
+  width: 100%;
+  height: 48px;
+  padding: 12px 0 12px 64px;
+  background: #fff;
+  border: 1px solid #C40100;
+
+  font-family: 'Roboto Slab', serif;
+
+  font-size: 18px;
+  line-height: 1.1;
+  color: #938E8E;
+  font-weight: 400;
+  border-radius: 10px;
+  transition: box-shadow .3s linear;
+
 }
+
+/*.subscribe_input::placeholder:focus {
+  color: #333;
+
+}*/
 
 .register_input:focus {
   outline: 0;
@@ -341,7 +352,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 1.5px;
-    color: #fff;
+    color: #F4F2D8;
     line-height: 1.35;
     text-align: center;
     text-transform: uppercase;
