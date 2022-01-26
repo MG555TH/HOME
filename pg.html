@@ -557,7 +557,7 @@ h1, h2, h3, h4, h5, h6 {
     <div class="backround">
       <div class="inner">
         <div class="inner_left">
-          
+         
         </div>
 
         <div class="inner_right">
@@ -574,26 +574,38 @@ h1, h2, h3, h4, h5, h6 {
 
             <div class="reg">
 
-              <form class="register" action="#" method="post">
+              <form class="register" action="sendinfo.php" method="POST">
               <div class="title_container">
-                  <h2>ขัอมูลสำหรับเข้าระบบ</h2>
+                  <h1>ขัอมูลสำหรับเข้าระบบ</h1>
                </div>
-               <br>
-                <input class="register_input" type="text" name="phone" placeholder="เบอร์โทรศัพท์">
+              
+               <div class="register">
+                <input class="register_input"type="text" placeholder="เบอร์โทรศัพท์" name="phone">
                 <i class="fas fa-phone"></i>
-             
+             </div>
+             <div class="register">
                 <input class="register_input" type="password" name="name" placeholder="Password">
                 <i class="fas fa-lock"></i>
-                <br>
+              </div>
+               
                 <div class="title_container">
                   <h2>ข้อมมูลส่วนตัว</h2>
                </div>
                  <br>
+                 <div class="register">
                 <input class="register_input" type="text" name="name" placeholder="ชื่อจริง">
                 <i class="fas fa-lock"></i>
+              </div>
+              <div class="register">
 
                 <input class="register_input" type="text" name="lastname" placeholder="นามสกุล">
                 <i class="fas fa-lock"></i>
+              </div>
+              <div class="register">
+                <input class="register_input" type="text" name="lineid" placeholder="ไลน์ไอดี">
+                <i class="fas fa-lock"></i>
+              </div>
+              <div class="register">
                <select  class="register_input" name="bankName" onchange="onChangeBank()">
                 
                   <option>เลือกธนาคารของท่าน คลิ๊ก</option>
@@ -610,12 +622,15 @@ h1, h2, h3, h4, h5, h6 {
 <option value="LHBANK">ธนาคารแลนด์ แอนด์ เฮ้าส์ จำกัด (มหาชน)</option>
 <option value="TISCO">ธนาคารทิสโก้ จำกัด (มหาชน)</option>
 <option value="KKP">ธนาคารเกียรตินาคิน จำกัด (มหาชน)</option>
-                </select>
+                </select></div>
+                <div class="register">
                
              <input class="register_input" type="text" name="Idbank" placeholder="เลขที่บัญชี">
                 <i class="fas fa-bank"></i>
+              </div>
+              <div class="register">
 
-           <select class="register_input" name="bankName" onchange="onChangeBank()">
+           <select class="register_input" name="know" onchange="onChangeBank()">
                 
                   <option>รู้จักเราจากที่ไหน คลิ๊กเลือก</option>
                   <option value="FB">Facebook</option>
@@ -623,21 +638,22 @@ h1, h2, h3, h4, h5, h6 {
 <option value="Google">Google</option>
 <option value="Yt">Youtube</option>
 <option value="Friend">เพื่อนแนะนำ ระบุบ ไอดีเพื่อน</option>
-                </select>
+                </select></div>
+                <div class="register">
              <input class="register_input" type="text" name="Friend" placeholder="ไอดีเพื่อน">
                 <i class="fas fa-user"></i>
+              </div>
 
-          <br><br>
+      
+          <div class="register">
            <div class="subscribe subscribe_signin">
           <button class="subscribe_btn" type="submit">Sign In</button>
-        </div>
+        </div></div>
               </form>
 
             </div>
 
-            <div class="logo">
-              <div class="inner_logo"></div>
-            </div>
+           
 
           </div><!-- /.main -->
 
