@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Registration Form</title>
+   
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="สมัครสมาชิก-.png"  />
+        <form action="">
+            <br>
+            <br>
+           
+            <input type="text" name="phone" id="phone" placeholder="เบอร์โทร"><br>
+            <input type="password" name="pass" id="pass" placeholder="รหัสผ่าน"><br>
+            <input type="text" name="username" id="username" placeholder="ชื่อ-นามสกุล"><br>
+            <input type="text" name="Line" id="Line" placeholder=" Line ID"><br>
+            <select class="form-control use-validate-sys"
+                                    id="register-bankname" name="bankname">
+                                    <option value="" selected="">เลือกธนาคาร</option>
+                                    <option value="KBANK">ธนาคารกสิกรไทย</option>
+                                    <option value="BBL">ธนาคารกรุงเทพ</option>
+                                    <option value="BAY">ธนาคารกรุงศรีอยุธยา</option>
+                                    <option value="SCB">ธนาคารไทยพาณิชย์</option>
+                                    <option value="KTB">ธนาคารกรุงไทย</option>
+                                    <option value="SCIB">ธนาคารนครหลวงไทย</option>
+                                    <option value="UOB">ธนาคารยูโอบี</option>
+                                    <option value="TMB">ธนาคารทหารไทย</option>
+                                    <option value="TISCO">ธนาคารทิสโก้</option>
+                                    <option value="ICBC">ธนาคารไอซีบีซี (ไทย)</option>
+                                    <option value="KKP">ธนาคารเกียรตินาคิน</option>
+                                    <option value="TBANK">ธนาคารธนชาต</option>
+                                    <option value="Standard Chartered">ธนาคารสแตนดาร์ดชาร์เตอร์ดไทย</option>
+                                    <option value="GHB">ธนาคารอาคารสงเคราะห์</option>
+                                    <option value="LHB">ธนาคารแลนด์ แอนด์ เฮาส์</option>
+                                    <option value="GSB">ธนาคารออมสิน</option>
+                                    <option value="BAC">ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร (ธกส)</option>
+                                    <option value="Islamic">ธนาคารอิสลามแห่งประเทศไทย</option>
+                                    <option value="CIMB">ธนาคารซีไอเอ็มบีไทย</option>
+                                </select><br>
+                                <input type="text" name="bankaccount" id="bankaccount" placeholder="เลขบัญชีธนาคาร"><br>
+                                <select class="form-control use-validate-sys"
+                                    id="register-bankname" name="know">
+                                    <option value="" selected="">รู้จักเราจาก..</option>
+                                    <option value="FB">Facebook</option>
+                                    <option value="Line">Line</option>
+                                    <option value="Youtube">Youtube</option>
+                                    <option value="google">Google</option>
+                                    <option value="VK">VK</option>
+                                    <option value="Friend">เพื่อนแนะนำ</option>
+                                    
+                                </select><br>
+                                <input type="text" name="FriendS" id="FriendS" placeholder="เพื่อนแนะนำกรุณาใส่ไอดีเพื่อน"><br>
+
+            <div class="btns">
+                <button type="submit">ยืนยันสมัครสมาชิก</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        // lets do some password validation
+        const pass = document.querySelector('#pass')
+        const confirm_pass = document.querySelector('#confirm-pass')
+        const msg = document.querySelector('p')
+        const btn = document.querySelector('button')
+        btn.addEventListener('click', (e) => {
+            if (pass.value != confirm_pass.value) {
+                e.preventDefault();
+                msg.style.display = "block"
+            }else{
+                alert('user registered sucessfully')
+            }
+
+        })
+    </script>
+</body>
+
+</html>
