@@ -1,0 +1,81 @@
+      
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(48, 46, 46);
+            color: white;
+            padding-top: 25vh;
+        }
+        
+        .container {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            align-items: center;
+            background-image: url("https://i.pinimg.com/originals/1c/95/84/1c95840a266876cae1b0c7f22e93eb0b.jpg");
+            border-radius: 15px;
+            padding: 25px 10px;
+            box-shadow: 0 0 15px #EEEEEE;
+
+            
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+        
+        input {
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            margin: 5px;
+            text-align: center;
+            font-size: 18px;
+            color: whitesmoke;
+            background-color: #121013;
+            box-shadow: 0 0 15px #EEEEEE;
+            
+        }
+        select {
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            margin: 5px;
+            text-align: center;
+            font-size: 18px;
+            color: whitesmoke;
+            background-color: #121013;
+            box-shadow: 0 0 15px #EEEEEE;
+        }
+        
+        .btns {
+            margin: 15px auto;
+        }
+        
+        button {
+            background-color: rgb(0, 0, 0);
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            margin: 15px;
+            text-align: center;
+            font-size: 28px;
+            color: #EEEEEE;
+            box-shadow: 0 0 15px #EEEEEE;
+        }
+        
+        button:hover {
+            background-color:red;
+        }
+        
+        h6 {
+            
+            
+        }
