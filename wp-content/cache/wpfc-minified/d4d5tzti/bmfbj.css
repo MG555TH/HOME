@@ -392,7 +392,8 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: var(--s-body-line-height);
-    
+    color: var(--s-text);
+    background: linear-gradient(to right, #0c0e13, #0e1117, #10131b, #12161e, #131822, #131822, #131822, #131822, #12161e, #10131b, #0e1117, #0c0e13);
     text-rendering: optimizeLegibility
 }
 
@@ -2907,7 +2908,7 @@ body.page-template-page-form .site-content {
 
 .jackpot-container img {
     margin: 0 var(--s-space);
-    width: 280px
+    width: 50px
 }
 
 .jackpot-container span.dollar {
