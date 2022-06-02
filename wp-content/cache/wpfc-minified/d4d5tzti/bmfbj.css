@@ -1612,7 +1612,7 @@ body.home .gallery {
 }
 
 .site,
-.site-branding,
+.randing,
 .site-header,
 .site-toggle {
     position: relative
@@ -1682,35 +1682,14 @@ body.home .gallery {
 }
 
 .site-branding .site-logo {
-    max-height: var(--s-header-height);
-    width: 350px;
-    padding: 5px;
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    margin: 0 var(--s-space);
-   
+    margin: 0 auto
 }
 
 .site-branding img {
     max-height: var(--s-header-height);
-    width: 350px;
-    padding: 7px;
-    padding-top: 7px;
-    padding-right: 7px;
-    padding-bottom: 7px;
-    padding-left: 7px;
-    padding-top: 7px;
-    padding-right: 7px;
-    padding-bottom: 7px;
-    padding-left: 7px;
-    margin: auto;
-    margin-top: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-   
+    width: 150px;
+    padding: 5px;
+    margin: 0 var(--s-space)
 }
 
 .site-title {
@@ -1719,7 +1698,6 @@ body.home .gallery {
     line-height: 1;
     padding-top: 2px
 }
-
 .site-toggle {
     font-size: 10px;
     padding: 16px;
