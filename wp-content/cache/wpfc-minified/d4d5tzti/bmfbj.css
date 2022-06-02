@@ -2905,8 +2905,20 @@ body.page-template-page-form .site-content {
 .jackpot-container {
     position: relative;
     padding: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
     border-bottom: 2px solid;
-    border-image: linear-gradient(90deg, transparent, var(--s-accent) 30%, var(--s-accent) 70%, transparent) 1
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: initial;
+    border-image: linear-gradient(90deg,transparent,var(--s-accent) 30%,var(--s-accent) 70%,transparent) 1;
+    border-image-source: ;
+    border-image-slice: ;
+    border-image-width: ;
+    border-image-outset: ;
+    border-image-repeat: ;
 }
 
 .jackpot-container marquee {
